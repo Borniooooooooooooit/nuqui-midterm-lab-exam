@@ -1,7 +1,9 @@
 <?php
 
 namespace App\Http\Controllers;
-
+use App\Models\post;
+use App\Models\post_comment;
+use App\Models\comment_replies;
 use Illuminate\Http\Request;
 
 class comment extends Controller

@@ -2,6 +2,11 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\post;
+use App\Models\post_comment;
+use App\Models\comment_replies;
+
+
 use Illuminate\Http\Request;
 
 class user extends Controller
@@ -11,7 +16,7 @@ class user extends Controller
      */
     public function index()
     {
-        //
+        return post::all();
     }
 
     /**
